@@ -25,6 +25,41 @@ Sample Input 1:
 Sample Output 1:
 1 2 3 4 6 13 28
 */
+######################################
+#include <iostream>
+using namespace std;
+
+#include "solution.h"
+
+int main()
+{
+
+	int t;
+	cin >> t;
+
+	while (t--)
+	{
+		int size;
+		cin >> size;
+
+		int *input = new int[size];
+
+		for (int i = 0; i < size; ++i)
+		{
+			cin >> input[i];
+		}
+
+		bubbleSort(input, size);
+
+		for (int i = 0; i < size; ++i)
+		{
+			cout << input[i] << " ";
+		}
+
+		delete[] input;
+		cout << endl;
+	}
+}
 #include<bits/stdc++.h>
 void bubbleSort(int *input, int size)
 {
