@@ -2,4 +2,4 @@
 This section contains problems which i solved during the course
 
 
-u can ping me if there any updates
+u can pullrequest me if there any updates
