@@ -46,6 +46,36 @@ Sample Output 2 :
 column 2 25
 column 1 342
 */
+#############
+#include <iostream>
+using namespace std;
+
+#include "solution.h"
+
+int main()
+{
+	int t;
+	cin >> t;
+	while (t--)
+	{
+		int row, col;
+		cin >> row >> col;
+
+		int **input = new int *[row];
+		for (int i = 0; i < row; i++)
+		{
+			input[i] = new int[col];
+			for (int j = 0; j < col; j++)
+			{
+				cin >> input[i][j];
+			}
+		}
+
+		findLargest(input, row, col);
+		cout << endl;
+	}
+}
+########
 #include<bits/stdc++.h>
 void findLargest(int **a, int nRows, int mCols)
 {
